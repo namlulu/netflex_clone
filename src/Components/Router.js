@@ -1,11 +1,13 @@
 import React from 'react';
-import { HashRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 import Home from 'Routes/Home';
 import TV from 'Routes/TV';
+import Navigation from 'Components/Navigation';
 import Search from 'Routes/Search';
 
 export default () => (
     <Router>
+        <Navigation />
         <Switch>
             <Route path="/" exact component={Home}></Route>
             <Route path="/tv" component={TV}></Route>
