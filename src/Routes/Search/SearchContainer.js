@@ -58,7 +58,6 @@ export default class extends React.Component {
             loading,
             error,
         } = this.state;
-        console.log(this.state);
         return (
             <SearchPresenter
                 movieResults={movieResults}
