@@ -31,10 +31,11 @@ const SearchPresenter = ({
     updateTerm,
 }) => (
     <Container>
-        <Form onSubmit={handleSubmit} onChange={updateTerm}>
+        <Form onSubmit={handleSubmit}>
             <Input
                 placeholder="Search Movies or TV Shows..."
                 value={searchTerm}
+                onChange={updateTerm}
             />
         </Form>
         {loading ? (
