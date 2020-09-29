@@ -9,7 +9,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.span`
-    color: ${(props) => props.color}
+    color: ${(props) => props.color};
     font-weight: 600;
 `;
 
